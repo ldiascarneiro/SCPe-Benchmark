@@ -208,12 +208,3 @@ python graphics/generate_benchmark_graphs.py --help
 
 The script generates `benchmark_aggregated_metrics.csv` and charts named `avg_*` and `efficiency_*` in the selected output directory. Those filenames differ from the committed `scpe_*` reference images displayed above. Reproducing the aggregate results requires the corresponding run records; the repository does not include those raw sessions.
 
-## Reproducibility Notes
-
-Record the dataset version and case range, repository commit, exact model identifiers and quantization, inference server version, hardware, configuration, and judge model for each experiment. Preserve failures and compare common case subsets when making paired model comparisons. Keep each experiment's output directory separate to avoid mixing repeated runs in the appended history.
-
-LLM judge scores are automated assessments and do not replace expert forensic validation. The `approved` field written by the save node is a pipeline manifest flag, not evidence of human approval.
-
-## Related Project
-
-This README follows the documentation structure of [DRFT Benchmark](https://github.com/ldiascarneiro/DRFT_Benchmark), adapted to the SCPe implementation, dataset fields, metrics, and output layout.
